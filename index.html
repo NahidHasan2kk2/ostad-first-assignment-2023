@@ -10,26 +10,27 @@
 <body>
     <script>
         /////////problem no => 1////////////
-        var purchaseAmount = 100;
+        var purchaseAmount = 202;
         if (purchaseAmount <= 50) {
             document.write('Your total purchasing amount with no discount is applied =' + ' ' + '$' + purchaseAmount)
         }
         else if (purchaseAmount > 50 && purchaseAmount <= 100) {
             var discountAmount = purchaseAmount * 0.05;
+            console.log(discountAmount);
             var discountedAmount = purchaseAmount - discountAmount;
-            document.write('Your total purchasing amount with 5% discount is applied =' + ' ' + '$' + discountedAmount)
+            document.write('your total discount with 5% =' + discountAmount.toFixed(2) + '<br>' + 'Your total purchasing amount with 5% discount is applied =' + ' ' + '$' + discountedAmount)
 
         }
         else if (purchaseAmount > 100 && purchaseAmount < 200) {
             var discountAmount = purchaseAmount * 0.1;
             var discountedAmount = purchaseAmount - discountAmount;
-            document.write('Your total purchasing amount with 10% discount is applied =' + ' ' + '$' + discountedAmount)
+            document.write('your total discount with 10% =' + discountAmount.toFixed(2) + '<br>' + 'Your total purchasing amount with 10% discount is applied =' + ' ' + '$' + discountedAmount)
 
         }
         else if (purchaseAmount >= 200) {
             var discountAmount = purchaseAmount * 0.15;
             var discountedAmount = purchaseAmount - discountAmount;
-            document.write('Your total purchasing amount with 15% discount is applied =' + ' ' + '$' + discountedAmount)
+            document.write('your total discount with 15% =' + discountAmount.toFixed(2) + '<br>' + 'Your total purchasing amount with 15% discount is applied =' + ' ' + '$' + discountedAmount)
 
         }
 
