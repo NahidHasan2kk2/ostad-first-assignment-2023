@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /////////problem no => 1////////////
+        var purchaseAmount = 100;
+        if (purchaseAmount <= 50) {
+            document.write('Your total purchasing amount with no discount is applied =' + ' ' + '$' + purchaseAmount)
+        }
+        else if (purchaseAmount > 50 && purchaseAmount <= 100) {
+            var discountAmount = purchaseAmount * 0.05;
+            var discountedAmount = purchaseAmount - discountAmount;
+            document.write('Your total purchasing amount with 5% discount is applied =' + ' ' + '$' + discountedAmount)
+
+        }
+        else if (purchaseAmount > 100 && purchaseAmount < 200) {
+            var discountAmount = purchaseAmount * 0.1;
+            var discountedAmount = purchaseAmount - discountAmount;
+            document.write('Your total purchasing amount with 10% discount is applied =' + ' ' + '$' + discountedAmount)
+
+        }
+        else if (purchaseAmount >= 200) {
+            var discountAmount = purchaseAmount * 0.15;
+            var discountedAmount = purchaseAmount - discountAmount;
+            document.write('Your total purchasing amount with 15% discount is applied =' + ' ' + '$' + discountedAmount)
+
+        }
+
+
+        document.write('<br><br>')
+
+        ////////problem no => 2//////////
+        var numbers = [12, 34, 45, 23, 6, 78, 54, 90];
+        var evenNumbers = numbers.filter(function (number) {
+            if (number % 2 === 0) {
+                return number;
+            }
+
+        })
+        // console.log(evenNumbers);
+        document.write(evenNumbers);
+
+
+        document.write('<br><br>')
+
+
+        ////////// problem no = 3;///////////
+        for (var i = 1; i <= 10; i++) {
+            var result = 5 * i;
+            document.write('5' + ' * ' + i + ' = ' + result + '<br>');
+        }
+
+        document.write('<br><br>')
+        /*
+        90 or above: 'A'
+        80 to 89: 'B'
+        70 to 79: 'C'
+         60 to 69: 'D'
+        Below 60: 'F'
+
+
+        */
+
+
+        ////////////problem no => 4////////////
+        var YourMarksIs = 90;
+        switch (true) {
+            case YourMarksIs >= 90:
+                document.write('Your Grade is A');
+                break;
+            case (YourMarksIs >= 80 && YourMarksIs <= 89):
+                document.write('Your Grade is B');
+                break;
+            case YourMarksIs >= 90:
+                document.write('Your Grade is C');
+                break;
+            case YourMarksIs >= 90:
+                document.write('Your Grade is D');
+                break;
+            case YourMarksIs >= 90:
+                document.write('Your Grade is F');
+                break;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
